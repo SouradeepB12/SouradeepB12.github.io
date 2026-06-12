@@ -1,46 +1,224 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Souradeep Bhattacharya</title>
+  <meta
+    name="description"
+    content="Personal website of Souradeep Bhattacharya: artificial intelligence, machine learning, software systems, research, publications, and awards."
+  >
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <h1>Souradeep Bhattacharya</h1>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#about">Welcome</a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#about">About Me</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+        <a href="#awards">Awards</a>
+      </nav>
+    </div>
+  </header>
 
-  <p>
-    I am interested in artificial intelligence, machine learning, and software systems.
-    My work focuses on building practical AI-powered applications and tools.
-  </p>
+  <main class="page">
+    <section id="about" class="intro section">
+      <div class="intro-copy">
+        <h1>Souradeep Bhattacharya</h1>
+        <p>
+          I am a Ph.D. candidate in Computer Engineering at Iowa State University,
+          specializing in cybersecurity for cyber-physical systems. My research focuses
+          on enhancing the resilience and security of critical infrastructure,
+          particularly renewable-integrated smart grids, distributed energy resources
+          (DERs), and electric vehicle (EV) charging infrastructure. My work leverages
+          advanced technologies such as artificial intelligence (AI) and machine
+          learning (ML), hardware-in-the-loop (HIL) real-time simulation, Industrial
+          Internet of Things (IIoT) frameworks, and cloud-based integration to develop
+          robust solutions against emerging cyber threats.
+        </p>
+        <p>
+          With over 5 years of proven industry experience in building automation and
+          project leadership, I have successfully bridged the gap between academic
+          research and practical application. My professional background includes
+          designing and implementing secure, efficient systems that drive innovation
+          in the energy and automation sectors.
+        </p>
+        <p>
+          I have published research in the field of cybersecurity for critical
+          infrastructures and am skilled in programming, data analysis, and advanced
+          problem-solving. My goal is to contribute to the development of secure,
+          sustainable, and intelligent energy systems that meet the challenges of the
+          modern era.
+        </p>
 
-  <h2>Research Interests</h2>
-  <p>
-    Artificial Intelligence · Machine Learning · Software Engineering · Data Science
-  </p>
+        <div class="interests" aria-label="Research interests">
+          <span>Artificial Intelligence</span>
+          <span>Machine Learning</span>
+          <span>Cybersecurity</span>
+          <span>Cyber-Physical Systems</span>
+          <span>Smart Grid</span>
+        </div>
+      </div>
 
-  <p>
-    ✉ sunnyboy0072@gmail.com<br>
-    GitHub: <a href="https://github.com/SouradeepB12">SouradeepB12</a><br>
-    LinkedIn: <a href="#">LinkedIn</a>
-  </p>
+      <aside class="profile">
+        <img class="profile-photo" src="assets/profile.jpg" alt="Souradeep Bhattacharya">
+        <div class="contact-card" aria-label="Contact information">
+          <div class="contact-row">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img">
+                <path d="M4 6h16v12H4z"></path>
+                <path d="m4 7 8 6 8-6"></path>
+              </svg>
+            </span>
+            <a href="mailto:sbhatta@iastate.edu">sbhatta@iastate.edu</a>
+          </div>
+          <div class="contact-row">
+            <span class="contact-icon pin" aria-hidden="true">
+              <svg viewBox="0 0 24 24" role="img">
+                <path d="M12 21s6-5.7 6-11a6 6 0 1 0-12 0c0 5.3 6 11 6 11z"></path>
+                <circle cx="12" cy="10" r="2.2"></circle>
+              </svg>
+            </span>
+            <span>Ames, Iowa, USA</span>
+          </div>
+          <div class="contact-actions" aria-label="Profile links">
+            <button type="button" class="icon-button" aria-label="Bio" title="Bio" aria-controls="bio-card" aria-expanded="false" data-bio-toggle>
+              <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                <circle cx="12" cy="8" r="4"></circle>
+                <path d="M5 21a7 7 0 0 1 14 0"></path>
+              </svg>
+            </button>
+            <a href="assets/Souradeep_Bhattacharya_CV_May_2026.pdf" aria-label="CV" title="CV" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                <path d="M7 3h7l4 4v14H7z"></path>
+                <path d="M14 3v5h5"></path>
+                <path d="M10 12h6"></path>
+                <path d="M10 16h6"></path>
+              </svg>
+            </a>
+            <a href="https://scholar.google.com/citations?user=AoDiFcYAAAAJ&amp;hl=en&amp;oi=ao" aria-label="Google Scholar" title="Google Scholar" target="_blank" rel="noopener">
+              <span aria-hidden="true">G</span>
+            </a>
+            <a href="https://github.com/SouradeepB12" aria-label="GitHub" title="GitHub" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" role="img" aria-hidden="true">
+                <path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.2-3.4-1.2-.4-1.1-1-1.4-1-1.4-.9-.6.1-.6.1-.6 1 0 1.6 1 1.6 1 .9 1.5 2.3 1.1 2.8.8.1-.6.3-1.1.6-1.3-2.2-.3-4.6-1.1-4.6-4.9 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.7 0 0 .8-.3 2.8 1a9.3 9.3 0 0 1 5 0c1.9-1.3 2.8-1 2.8-1 .5 1.4.2 2.4.1 2.7.7.7 1 1.6 1 2.7 0 3.8-2.3 4.6-4.6 4.9.4.3.7 1 .7 2v2.4c0 .3.2.6.7.5A10 10 0 0 0 12 2z"></path>
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/souradeep-bhattacharya03/" aria-label="LinkedIn" title="LinkedIn" target="_blank" rel="noopener">
+              <span aria-hidden="true">in</span>
+            </a>
+          </div>
+        </div>
+        <div class="bio-card" id="bio-card" hidden>
+          <h2>Bio</h2>
+          <p>
+            Souradeep Bhattacharya (Graduate Student Member, IEEE) received the
+            B.Tech. degree in Applied Electronics and Instrumentation Engineering
+            from the West Bengal University of Technology (WBUT), India, in 2016,
+            and M.S. degree in Computer Engineering from Iowa State University
+            (ISU), USA, in 2025. He is currently working toward the Ph.D. degree
+            in Computer Engineering in the Department of Electrical and Computer
+            Engineering at ISU. His research interests include cybersecurity for
+            cyber-physical systems, smart grids, substation automation, distributed
+            energy resources, and machine learning.
+          </p>
+        </div>
+      </aside>
+    </section>
 
-  <hr>
+    <section id="research" class="section">
+      <div class="section-heading">
+        <h2>Research</h2>
+      </div>
+      <p>
+        My research focuses on cybersecurity for cyber-physical systems, with an
+        emphasis on resilient and secure critical infrastructure. I am particularly
+        interested in renewable-integrated smart grids, distributed energy resources,
+        electric vehicle charging infrastructure, hardware-in-the-loop real-time
+        simulation, Industrial Internet of Things frameworks, AI/ML-enabled security,
+        and cloud-connected energy systems.
+      </p>
+    </section>
 
-  <h2>News</h2>
-  <ul>
-    <li>Website launched.</li>
-  </ul>
+    <section id="publications" class="section">
+      <div class="section-heading">
+        <h2>Publications</h2>
+      </div>
+      <div class="publication-groups">
+        <article>
+          <h3>Journals</h3>
+          <ol class="pub-list">
+            <li>S. Bhattacharya and M. Govindarasu, "Physics-Informed Neural Network-Based Detection and Mitigation of Side-Channel Noise Intrusion in Solid State Transformers," in <em>IEEE Transactions on Power Electronics</em> (Under Review).</li>
+            <li>S. Bhattacharya, M. D. R. Greidanus, S. Gupta, D. Sur, S. K. Mazumder and M. Govindarasu, "Machine-Learning-Based Adaptive Anomaly Detection for Control Feedback Interferences in Solid-State Transformers," in <em>IEEE Journal of Emerging and Selected Topics in Industrial Electronics</em>, vol. 6, no. 4, pp. 1840-1852, Oct. 2025, doi: 10.1109/JESTIE.2025.3589164.</li>
+            <li>N. Saqib, S. Bhattacharya, K. K. Challa, and M. Govindarasu, "Attack resilient microgrid: Impact characterisation, online anomaly detection and mitigation," <em>IET Smart Grid</em>, vol. 9, no. 1, p. e70070, 2026, doi: 10.1049/stg2.70070.</li>
+            <li>D. Popoola, S. Bhattacharya, A. Hahn, and M. Govindarasu, "AI-enabled Security Operation Center (SOC) for Modern Power Grids," in <em>IEEE Power &amp; Energy Society Magazine</em> (Accepted).</li>
+          </ol>
+        </article>
 
-  <h2>Projects</h2>
-  <ul>
-    <li><b>Project Name</b> — Short description of your project.</li>
-  </ul>
+        <article>
+          <h3>Book Chapters</h3>
+          <ol class="pub-list">
+            <li>S. Bhattacharya, N. Saqib, and M. Govindarasu, "Anomaly Detection, Cyber Situational Awareness, and Attack Mitigation for DER Monitoring and Control," book chapter in <em>Cybersecurity and Resilience of Modern Power Systems</em>, Wiley-IEEE Press (Accepted).</li>
+          </ol>
+        </article>
 
-  <h2>Publications</h2>
-  <p>Coming soon.</p>
+        <article>
+          <h3>Peer-Reviewed Conferences</h3>
+          <h4>Published/Accepted</h4>
+          <ol class="pub-list">
+            <li>S. Bhattacharya and M. Govindarasu, "Real-time Cybersecurity Situational Awareness Framework for Agriculture Machinery-based IoT Networks," <em>2025 34th International Conference on Computer Communications and Networks (ICCCN)</em>, Tokyo, Japan, 2025, pp. 1-9, doi: 10.1109/ICCCN65249.2025.11133877.</li>
+            <li>S. Bhattacharya, R. G. Gallolukankanamalage, B. L Steward, and M. Govindarasu, "ML-based Anomaly Detection for CAN Bus Network in Agriculture Machinery," <em>Proceedings of the AAAI Symposium Series</em>, vol. 4, no. 1, pp. 416-423, Nov. 2024, doi: 10.1609/aaaiss.v4i1.31826.</li>
+            <li>S. Bhattacharya, M. D. Roig Greidanus, S. Gupta, D. Sur, S. K. Mazumder and M. Govindarasu, "Machine-Learning-based Anomaly Detection System for Cyber-Physical Attack on a Solid-State Transformer," <em>IECON 2024 - 50th Annual Conference of the IEEE Industrial Electronics Society</em>, Chicago, IL, USA, 2024, pp. 1-6, doi: 10.1109/IECON55916.2024.10905322.</li>
+            <li>S. Bhattacharya, N. Saqib, and M. Govindarasu, "ML-based Anomaly Detection System for IEC 61850 Communication in Substations," <em>2024 IEEE Power &amp; Energy Society General Meeting (PESGM)</em>, pp. 1-5, 2024, doi: 10.1109/PESGM51994.2024.10688773.</li>
+            <li>S. Bhattacharya, M. Govindarasu, M. Girdhar, J. Hong, "A Quantitative Methodology for Attack-Defense Analysis of EV Charging Infrastructure," <em>2023 IEEE Power &amp; Energy Society General Meeting (PESGM)</em>, pp. 1-5, 2023, doi: 10.1109/PESGM52003.2023.10252252.</li>
+            <li>S. Bhattacharya, B. Hyder, M. Govindarasu, "ICS-CTM2: Industrial Control System Cybersecurity Testbed Maturity Model," <em>2022 Resilience Week (RWS)</em>, pp. 1-6, 2022, doi: 10.1109/RWS55399.2022.9984023.</li>
+            <li>D. Popoola, S. Bhattacharya, and M. Govindarasu, "Self-Verifying Anomaly Detection using Explainable AI for Cybersecurity of DER Networks," in <em>2026 IEEE Power &amp; Energy Society General Meeting (PESGM)</em>, Montreal, Quebec, Canada, 2026 (Accepted).</li>
+            <li>H. Ravichandran, S. Bhattacharya, N. Saqib, and M. Govindarasu, "Real-time Edge-based Protocol Converter and Testbed-based Evaluation for DER Networks," in <em>2026 IEEE Power &amp; Energy Society General Meeting (PESGM)</em>, Montreal, Quebec, Canada, 2026 (Accepted).</li>
+            <li>D. Popoola, S. Bhattacharya, and M. Govindarasu, "CySIDER: Cybersecurity Situational Intelligence Framework for DER Networks," <em>2025 Resilience Week (RWS)</em>, National Harbor, MD, USA, 2025, pp. 1-10, doi: 10.1109/RWS66711.2025.11304446.</li>
+            <li>N. Saqib, F. C. Joseph, K. K. Challa, S. Bhattacharya and M. Govindarasu, "Impact of False Data Injection Attack on DER Integrated Distribution Systems," <em>2025 IEEE Power &amp; Energy Society General Meeting (PESGM)</em>, Austin, TX, USA, 2025, pp. 1-5, doi: 10.1109/PESGM52009.2025.11225774.</li>
+            <li>S. Bose, S. Bhattacharya, N. Saqib and M. Govindarasu, "ZT-MTD: Zero Trust-enabled Dynamic Moving Target Defense for DER Networks," <em>2025 IEEE Power &amp; Energy Society General Meeting (PESGM)</em>, Austin, TX, USA, 2025, pp. 1-5, doi: 10.1109/PESGM52009.2025.11224995.</li>
+            <li>N. Saqib, S. Bhattacharya, B. Hyder and M. Govindarasu, "Cyber Attack Impact Characterization for IEC 61850-based Substations," <em>IECON 2024 - 50th Annual Conference of the IEEE Industrial Electronics Society</em>, Chicago, IL, USA, 2024, pp. 1-6, doi: 10.1109/IECON55916.2024.10905837.</li>
+            <li>N. Saqib, S. Bhattacharya, K. Challa, and M. Govindarasu, "Impact Characterization of Cyber Attacks on Grid-Connected Microgrid Operations," <em>2024 56th North American Power Symposium (NAPS)</em>, pp. 1-6, 2024, doi: 10.1109/NAPS61145.2024.10741631.</li>
+            <li>Shantanu Gupta, Mateo D Roig Greidanus, Silvanus A D'silva, S. Bhattacharya, Sudip K Mazumder, M Shadmand, Manimaran Govindarasu, Taesic Kim, Juan C Balda, Xiaoqing Song, Rambabu Adapa, Mohammad Shahidehpour, "Cyber Resiliency of a Solid-State Power Substation," <em>2024 IEEE Applied Power Electronics Conference and Exposition (APEC)</em>, pp. 2293-2300, 2024, doi: 10.1109/APEC48139.2024.10509048.</li>
+          </ol>
 
-  <h2>Education</h2>
-  <p>Add your university/program here.</p>
+          <h4>Under Review</h4>
+          <ol class="pub-list">
+            <li>A. B. Chandrasekaran, D. Popoola, S. Bhattacharya, and M. Govindarasu, "ZT-DAC: ML-Driven Dynamic Access Control Policy for Zero Trust in DER Networks," in <em>2026 IEEE International Conference on Communications, Control, and Computing Technologies for Smart Grids (SmartGridComm)</em>, College Station, TX, USA, 2026 (Under Review).</li>
+          </ol>
 
-  <h2>Awards & Honors</h2>
-  <p>Coming soon.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-heading">
+        <h2>Projects</h2>
+      </div>
+      <p>Coming soon.</p>
+    </section>
+
+    <section id="awards" class="section">
+      <div class="section-heading">
+        <h2>Awards</h2>
+      </div>
+      <ol class="award-list">
+        <li><span>2026</span>1st Place, Best Poster Award, IEEE PES T&amp;D Conference.</li>
+        <li><span>2025</span>3rd Place, Best Poster Award, ISU EPRC 2025.</li>
+        <li><span>2024</span>Best Paper Presentation Award, IEEE IECON Annual Conference.</li>
+        <li><span>2024</span>GPSS Professional Advancement Grant, Iowa State University, $400.</li>
+        <li><span>2022</span>Graduate Tuition Scholarship, Iowa State University, $21,600 per academic year.</li>
+        <li><span>2021</span>Operational Excellence Award, Johnson Controls, Inc.</li>
+        <li><span>2020</span>Customer Satisfaction Award, Johnson Controls, Inc.</li>
+        <li><span>2019</span>Customer Satisfaction Award, Johnson Controls, Inc.</li>
+        <li><span>2018</span>Customer Satisfaction Award, Johnson Controls, Inc.</li>
+        <li><span>2018</span>Live Quality Award, Johnson Controls, Inc.</li>
+      </ol>
+    </section>
+  </main>
 </body>
 </html>
